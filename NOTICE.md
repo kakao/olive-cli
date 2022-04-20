@@ -1,5 +1,3 @@
-오픈소스 라이선스
-
 # OSS Notice | OLIVE-CLI #
 
 This application is Copyright © Kakao Corp. All rights reserved.
