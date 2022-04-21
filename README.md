@@ -7,7 +7,8 @@ OLIVE CLI는 사용자 PC 환경에서 OLIVE Platform의 기능을 실행할 수
 CLI를 사용하면 터미널 프로그램의 명령 프롬프트에서도 브라우저 기반 OLIVE Platform과 동일하게 오픈소스를 스캔할 수 있습니다.
 
 > **★ 참고:**<br>
-> OLIVE CLI를 통해 OLIVE의 기능을 사용하기 위해서는 먼저 OLIVE에서 API 토큰을 발급받아야 합니다. 발급 방법은 다음의 [API 토큰 발급하기](#API-토큰-발급하기)를 참고해 주세요.
+> - OLIVE CLI를 통해 OLIVE의 기능을 사용하기 위해서는 먼저 OLIVE에서 API 토큰을 발급받아야 합니다. 발급 방법은 다음의 [API 토큰 발급하기](#API-토큰-발급하기)를 참고해 주세요.
+> - OLIVE CLI 다운로드는 [여기](https://github.com/kakao/olive-cli/releases)를 참고해주세요.
 
 OLIVE CLI는 보안상 웹서비스 사용이 어렵거나, 소스코드 노출이 우려되는 경우 안심하고 사용할 수 있습니다. 특장점은 다음과 같습니다.
 
@@ -24,10 +25,8 @@ OLIVE CLI는 보안상 웹서비스 사용이 어렵거나, 소스코드 노출�
 
 ## 면책조항
 
-```
 카카오는 OLIVE CLI 를 통해 제공되는 모든 정보의 정확성, 신뢰도 등에 대해 어떠한 보증도 하지 않습니다.
 사용자는 전적으로 자기 책임 하에 OLIVE CLI 와 OLIVE Platform 을 사용하고, 카카오는 이와 관련하여 사용자 및 제3자에 대해 어떠한 책임도 지지 않습니다.
-```
 
 ## Quick Links
 - [OLIVE Platform](https://olive.kakao.com)
@@ -134,45 +133,42 @@ OLIVE CLI를 사용하기 위해서는 API 토큰이 필요합니다.
 
 API 토큰은 [OLIVE Platform](https://olive.kakao.com) **마이페이지** 하위의 **Token 설정** 탭에서 생성할 수 있습니다.
 
-![토큰 발급 화면](https://t1.kakaocdn.net/olive/assets/images/api-token.png)
+![토큰 발급 화면](https://github.daumkakao.com/storage/user/1131/files/3c96f725-76e5-4a92-85cc-ef11f20ebf8f)
 
 ## 분석 가능 시스템
 
 현재 분석 가능한 시스템은 다음과 같습니다. 다양한 시스템을 지원하도록 계속 업데이트할 예정입니다.
 
-<details>
-
 | 번호 | 패키지 매니저 타입 | 분석 타입 | 의존성 타입       | 분석 대상 파일           |
 | ---- | ------------------ | --------- | ----------------- | ------------------------ |
 | 1    | MAVEN              | BUILDER   | GRADLE            | -                        |
 | 2    | MAVEN              | BUILDER   | GRADLE_KTS        | -                        |
-| 3    | MAVEN              | PARSER    | GRADLE            | build.gradle             |
-| 4    | MAVEN              | PARSER    | GRADLE_KTS        | gradle.kts               |
+| 3    | MAVEN              | PARSER    | GRADLE            | *.gradle             |
+| 4    | MAVEN              | PARSER    | GRADLE_KTS        | *.gradle.kts               |
 | 5    | MAVEN              | PARSER    | POM_XML           | pom.xml                  |
-| 6    | COCOAPODS          | PARSER    | PODFILE           | Podfile, podfile         |
-| 7    | SWIFT_PM           | PARSER    | PACKAGE_SWIFT     | Package.swift            |
-| 8    | SWIFT_PM           | PARSER    | PACKAGE_RESOLVED  | Package.resolved         |
+| 6    | COCOAPOD          | PARSER    | PODFILE           | Podfile, podfile         |
+| 7    | COCOAPOD          | PARSER    | PODSPEC           | .podspec         |
+| 8    | SWIFT_PM           | PARSER    | PACKAGE_SWIFT     | Package.swift            |
 | 9    | RUBY_GEM           | PARSER    | GEMFILE           | Gemfile                  |
 | 10   | PYPI               | PARSER    | SETUP_PY          | setup.py                 |
 | 11   | PYPI               | PARSER    | REQUIREMENT_TXT   | requirements.txt         |
 | 12   | NPM                | PARSER    | PACKAGE_JSON      | package.json             |
-| 13   | NPM                | PARSER    | PACKAGE_LOCK_JSON | package-lock.json        |
-| 14   | GO_PACKAGE         | PARSER    | GODEP_JSON        | godeps.json, Godeps.json |
-| 15   | GO_PACKAGE         | PARSER    | GOPKG_TOML        | Gopkg.toml               |
-| 16   | GO_PACKAGE         | PARSER    | GOPKG_LOCK        | Gopkg.lock               |
-| 17   | GO_PACKAGE         | PARSER    | GO_MODULE         | go.mod                   |
-| 18   | SUPERMARKET        | PARSER    | BERKSFILE         | Berksfile                |
-| 19   | MAKE               | PARSER    | CMAKE_LIST_TXT    | CMakeLists.txt           |
-| 20   | MAKE               | PARSER    | ANDROID_MAKE      | Android.mk               |
-| 21   | SUBMODULE          | PARSER    | GIT_MODULES       | .gitmodules              |
-| 22   | USER_DEFINED       | PARSER    | DEPENDENCY_TREE   | dependencyTree.txt       |
+| 13   | GO_PACKAGE         | PARSER    | GODEP_JSON        | Godeps.json |
+| 14   | GO_PACKAGE         | PARSER    | GOPKG_TOML        | Gopkg.toml               |
+| 15   | GO_PACKAGE         | PARSER    | GOPKG_LOCK        | Gopkg.lock               |
+| 16   | GO_PACKAGE         | PARSER    | GO_MODULE         | go.mod                   |
+| 17   | SUPERMARKET        | PARSER    | BERKSFILE         | Berksfile                |
+| 18   | MAKE               | PARSER    | CMAKE_LIST_TXT    | CMakeLists.txt           |
+| 19   | MAKE               | PARSER    | ANDROID_MAKE      | Android.mk               |
+| 20   | SUBMODULE          | PARSER    | GIT_MODULES       | .gitmodules              |
+| 21   | USER_DEFINED       | PARSER    | DEPENDENCY_MAVEN   | dependencyTree.maven       |
+| 22   | USER_DEFINED       | PARSER    | DEPENDENCY_SCALA  | dependencyTree.scala       |
 | 23   | FRAMEWORK          | SEARCHER  | BINARY            | *.framework              |
 | 24   | LIBRARY            | SEARCHER  | BINARY            | *.lib, *.jar, *.dll ...  |
 | 25   | CARTHAGE           | PARSER    | CARTFILE          | Cartfile                 |
 
-</details>
-
 ### Apple Frameworks를 사용한 경우
+
 OLIVE CLI(v1.0.0)에서는 [Apple Fromeworks](https://olive.kakao.com/component/detail?id=2043) 컴포넌트 자동 매핑을 지원하지 않고 있습니다. <br/>
 추후 개선될 예정이며, 다음의 정보를 참고하여 [`add component`](https://olive.kakao.com/docs/cli/command#add-component) 명령어로 수동 추가해 주시길 바랍니다.
 
