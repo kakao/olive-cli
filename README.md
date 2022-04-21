@@ -133,7 +133,7 @@ OLIVE CLI를 사용하기 위해서는 API 토큰이 필요합니다.
 
 API 토큰은 [OLIVE Platform](https://olive.kakao.com) **마이페이지** 하위의 **Token 설정** 탭에서 생성할 수 있습니다.
 
-![olive-token](https://user-images.githubusercontent.com/2889542/164443028-e56e39cb-1283-4920-a4d5-8d7165268f8c.png)
+![token-generate](https://user-images.githubusercontent.com/2889542/164443414-f3c8d683-32b7-4bb9-9901-70050385bc18.png)
 
 ## 분석 가능 시스템
 
