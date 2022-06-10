@@ -20,8 +20,8 @@ OLIVE CLI는 보안상 웹서비스 사용이 어렵거나, 소스코드 노출�
 
   > **★ 참고:**<br/>`report` 및 `apply` 명령어 수행 시 저장되는 정보는 다음과 같습니다.
   >
-  > - [`report` 명령어 수행 시 저장되는 정보](https://olive.kakao.com/docs/cli/command#report)
-  > - [`apply` 명령어 수행 시 저장되는 정보](https://olive.kakao.com/docs/cli/command#apply)
+  > - [`report` 명령어 수행 시 저장되는 정보](https://olive.kakao.com/docs/cli/commands#report)
+  > - [`apply` 명령어 수행 시 저장되는 정보](https://olive.kakao.com/docs/cli/commands#apply)
 
 ## 면책조항
 
@@ -117,15 +117,15 @@ Commands:
 | 명령어                                                  | 설명                                                          |
 | ------------------------------------------------------| ------------------------------------------------------------ |
 | [`init`](https://olive.kakao.com/docs/cli/command#init)                     | OLIVE CLI 사용을 위한 초기 설정을 진행하며, `config.yaml` 설정파일이 생성됩니다. |
-| [`analyze`](https://olive.kakao.com/docs/cli/command#analyze)               | `config.yaml` 설정파일 기반으로 의존성 분석을 시작합니다. <br/>분석이 완료되면 `dependency.json`, `dependency.csv` 파일이 생성됩니다. |
-| [`mapping`](https://olive.kakao.com/docs/cli/command#mapping)               | `analyze` 명령어로 분석된 의존성을 컴포넌트에 매핑합니다. <br/>매핑이 완료되면 `mapping.json` `mapping.csv`, `unmapping.csv` 파일이 생성됩니다. |
-| [`component`](https://olive.kakao.com/docs/cli/command#component)           | 프로젝트가 사용한 컴포넌트를 조회합니다. <br/>조회가 완료되면 `component.json`, `component.csv` 파일이 생성됩니다.                     |
-| [`license`](https://olive.kakao.com/docs/cli/command#license)               | 프로젝트가 사용한 컴포넌트의 라이선스를 조회합니다. <br/>조회가 완료되면 `license.json`, `license.csv` 파일이 생성됩니다.                                |
-| [`add component`](https://olive.kakao.com/docs/cli/command#add-component)   | 사용자가 수동으로 컴포넌트를 추가합니다.                     |
+| [`analyze`](https://olive.kakao.com/docs/cli/commands#analyze)               | `config.yaml` 설정파일 기반으로 의존성 분석을 시작합니다. <br/>분석이 완료되면 `dependency.json`, `dependency.csv` 파일이 생성됩니다. |
+| [`mapping`](https://olive.kakao.com/docs/cli/commands#mapping)               | `analyze` 명령어로 분석된 의존성을 컴포넌트에 매핑합니다. <br/>매핑이 완료되면 `mapping.json` `mapping.csv`, `unmapping.csv` 파일이 생성됩니다. |
+| [`component`](https://olive.kakao.com/docs/cli/commands#component)           | 프로젝트가 사용한 컴포넌트를 조회합니다. <br/>조회가 완료되면 `component.json`, `component.csv` 파일이 생성됩니다.                     |
+| [`license`](https://olive.kakao.com/docs/cli/commands#license)               | 프로젝트가 사용한 컴포넌트의 라이선스를 조회합니다. <br/>조회가 완료되면 `license.json`, `license.csv` 파일이 생성됩니다.                                |
+| [`add component`](https://olive.kakao.com/docs/cli/commands#add-component)   | 사용자가 수동으로 컴포넌트를 추가합니다.                     |
 | [`report`](https://olive.kakao.com/docs/cli/command#report)                 | 매핑이 되지 않은 의존성 목록을 관리자에게 전송합니다.<br/><br/>★<b>참고:</b> 관리자가 해당 데이터를 리뷰하고 `mapping` 명령어를 다시 수행하여 컴포넌트에 매핑할 수 있습니다. |
-| [`apply`](https://olive.kakao.com/docs/cli/command#apply)                   | CLI 분석한 결과를 토대로 OLIVE Platform에 프로젝트를 생성합니다. |
-| [`notice`](https://olive.kakao.com/docs/cli/command#notice)                 | 프로젝트가 사용한 컴포넌트를 기반으로 고지문 미리보기를 생성합니다. |
-| [`status`](https://olive.kakao.com/docs/cli/command#status)                 | 현재 프로젝트 상태를 조회할 수 있습니다.                     |
+| [`apply`](https://olive.kakao.com/docs/cli/commands#apply)                   | CLI 분석한 결과를 토대로 OLIVE Platform에 프로젝트를 생성합니다. |
+| [`notice`](https://olive.kakao.com/docs/cli/commands#notice)                 | 프로젝트가 사용한 컴포넌트를 기반으로 고지문 미리보기를 생성합니다. |
+| [`status`](https://olive.kakao.com/docs/cli/commands#status)                 | 현재 프로젝트 상태를 조회할 수 있습니다.                     |
 
 ## API 토큰 발급하기
 
@@ -170,7 +170,7 @@ API 토큰은 [OLIVE Platform](https://olive.kakao.com) **마이페이지** 하�
 ### Apple Frameworks를 사용한 경우
 
 OLIVE CLI(v1.0.0)에서는 [Apple Fromeworks](https://olive.kakao.com/component/detail?id=2043) 컴포넌트 자동 매핑을 지원하지 않고 있습니다. <br/>
-추후 개선될 예정이며, 다음의 정보를 참고하여 [`add component`](https://olive.kakao.com/docs/cli/command#add-component) 명령어로 수동 추가해 주시길 바랍니다.
+추후 개선될 예정이며, 다음의 정보를 참고하여 [`add component`](https://olive.kakao.com/docs/cli/commands#add-component) 명령어로 수동 추가해 주시길 바랍니다.
 
 ```
 ---
