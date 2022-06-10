@@ -116,7 +116,7 @@ Commands:
 
 | 명령어                                                  | 설명                                                          |
 | ------------------------------------------------------| ------------------------------------------------------------ |
-| [`init`](https://olive.kakao.com/docs/cli/command#init)                     | OLIVE CLI 사용을 위한 초기 설정을 진행하며, `config.yaml` 설정파일이 생성됩니다. |
+| [`init`](https://olive.kakao.com/docs/cli/commands#init)                     | OLIVE CLI 사용을 위한 초기 설정을 진행하며, `config.yaml` 설정파일이 생성됩니다. |
 | [`analyze`](https://olive.kakao.com/docs/cli/commands#analyze)               | `config.yaml` 설정파일 기반으로 의존성 분석을 시작합니다. <br/>분석이 완료되면 `dependency.json`, `dependency.csv` 파일이 생성됩니다. |
 | [`mapping`](https://olive.kakao.com/docs/cli/commands#mapping)               | `analyze` 명령어로 분석된 의존성을 컴포넌트에 매핑합니다. <br/>매핑이 완료되면 `mapping.json` `mapping.csv`, `unmapping.csv` 파일이 생성됩니다. |
 | [`component`](https://olive.kakao.com/docs/cli/commands#component)           | 프로젝트가 사용한 컴포넌트를 조회합니다. <br/>조회가 완료되면 `component.json`, `component.csv` 파일이 생성됩니다.                     |
