@@ -68,11 +68,11 @@ OLIVE CLI 수행 시 특정 명령어에서 OLIVE Platform API 호출이 필요�
 
 | 명령어          | 메서드 | API URL                                           |
 | --------------- | ------ | ------------------------------------------------- |
-| `mapping`       | `POST` | https://olive-api.kakao.com/api/v1/cli/mapping    |
-| `report`        | `POST` | https://olive-api.kakao.com/api/v1/cli/report     |
-| `apply`         | `POST` | https://olive-api.kakao.com/api/v1/cli/apply      |
-| `add component` | `POST` | https://olive-api.kakao.com/api/v1/cli/components |
-| `notice`        | `PUT`  | https://olive-api.kakao.com/api/v1/cli/notices    |
+| `mapping`       | `POST` | `https://olive-api.kakao.com/api/v1/cli/mapping`    |
+| `report`        | `POST` | `https://olive-api.kakao.com/api/v1/cli/report`     |
+| `apply`         | `POST` | `https://olive-api.kakao.com/api/v1/cli/apply`      |
+| `add component` | `POST` | `https://olive-api.kakao.com/api/v1/cli/components` |
+| `notice`        | `PUT`  | `https://olive-api.kakao.com/api/v1/cli/notices`    |
 
 ### 실행 화면
 
