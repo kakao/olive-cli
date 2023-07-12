@@ -23,6 +23,14 @@ Copyright 2001-2016 The Apache Software Foundation
 
 Apache License 2.0
 
+**Apache Log4j 2**
+
+https://github.com/apache/logging-log4j2
+
+Copyright 1999-2005 The Apache Software Foundation
+
+Apache License 2.0
+
 **jackon-module-kotlin**
 
 https://github.com/FasterXML/jackson-module-kotlin
@@ -95,6 +103,14 @@ Copyright 2010-2017 JetBrains s.r.o.
 
 Apache License 2.0
 
+**kotlin-logging**
+
+https://github.com/MicroUtils/kotlin-logging
+
+Copyright 2016-2018 Ohad Shai
+
+Apache License 2.0
+
 **Ktor**
 
 https://github.com/ktorio/ktor
@@ -110,6 +126,14 @@ https://github.com/qos-ch/logback
 Copyright 2016 QOS.ch
 
 Eclipse Public License 1.0
+
+**lombok**
+
+https://github.com/rzwitserloot/lombok
+
+Copyright 2009-2015 The Project Lombok Authors.
+
+MIT License
 
 **picocli**
 
@@ -127,6 +151,14 @@ Copyright property of respective owners
 
 Apache License 2.0
 
+**Semver4j**
+
+https://github.com/vdurmont/semver4j
+
+Copyright 2015-present Vincent DURMONT vdurmont@gmail.com
+
+MIT License
+
 **SLF4J**
 
 https://github.com/qos-ch/slf4j
@@ -135,21 +167,6 @@ Copyright 2004-2015 QOS.ch
 
 MIT License
 
-**Spring Framework**
-
-https://github.com/spring-projects/spring-framework
-
-Copyright 2002-2016 the original author or authors
-
-Apache License 2.0
-
-**toml4j**
-
-https://github.com/mwanji/toml4j
-
-copyright 2013-2015 Moandji Ezana
-
-MIT License
 
 # Apache License 2.0 #
 
@@ -326,7 +343,7 @@ THE ACCOMPANYING PROGRAM IS PROVIDED UNDER THE TERMS OF THIS ECLIPSE PUBLIC LICE
 ``````````
 MIT License
 
-Copyright (c)  
+Copyright (c) <year> <copyright holders>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
