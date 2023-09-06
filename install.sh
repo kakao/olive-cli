@@ -27,7 +27,7 @@ install_package_if_absent() {
       elif [[ "$OSTYPE" == "darwin"* ]]; then
         # Mac OSX
         if ! command -v brew >/dev/null 2>&1; then
-          /usr/bin/ruby -e "$(sudo curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"  # Install Homebrew if not installed
+          /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"  # Install Homebrew if not installed
         fi
         sudo brew install "$package"
       else
