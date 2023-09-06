@@ -55,7 +55,7 @@ if [ -f "/usr/local/bin/olive-cli" ]; then
 fi
 
 # Download latest release and parsing
-OLIVE_CLI_LATEST_RELEASE=$(sudo curl -s "https://api.github.com/repos/kakao/olive-cli/releases/latest")
+OLIVE_CLI_LATEST_RELEASE=$(curl -s "https://api.github.com/repos/kakao/olive-cli/releases/latest")
 
 if [[ "$OSTYPE" == "linux-gnu"* ]]; then
   # Linux
