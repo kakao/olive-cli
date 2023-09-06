@@ -70,7 +70,7 @@ fi
 
 # Download the program using curl
 echo "Downloading from: $OLIVE_CLI_ARCHIVE_URL"
-sudo curl -L "$OLIVE_CLI_ARCHIVE_URL" -o "olive-cli.tar.gz"
+curl -L "$OLIVE_CLI_ARCHIVE_URL" -o "olive-cli.tar.gz"
 
 # Extract the downloaded file
 echo "Extract file: $(pwd)/olive-cli.tar.gz"
