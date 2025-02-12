@@ -33,7 +33,7 @@ Apache License 2.0
 
 **jackon-module-kotlin**
 
-https://github.com/FasterXML/jackson-module-kotlin
+https://github.com/fasterxml/jackson-module-kotlin
 
 Copyright 2020 FasterXML.
 
@@ -41,7 +41,7 @@ Apache License 2.0
 
 **Jackson Annotations**
 
-https://github.com/FasterXML/jackson-annotations
+https://github.com/fasterxml/jackson-annotations
 
 Copyright 2009 FasterXML, LLC
 
@@ -49,7 +49,7 @@ Apache License 2.0
 
 **Jackson Core**
 
-https://github.com/FasterXML/jackson-core
+https://github.com/fasterxml/jackson-core
 
 Copyright 2009 FasterXML, LLC
 
@@ -57,7 +57,7 @@ Apache License 2.0
 
 **Jackson Databind**
 
-https://github.com/FasterXML/jackson-databind
+https://github.com/fasterxml/jackson-databind
 
 Copyright 2009 FasterXML, LLC
 
@@ -65,7 +65,7 @@ Apache License 2.0
 
 **jackson-dataformat-xml**
 
-http://github.com/FasterXML/jackson-dataformat-xml
+https://github.com/fasterxml/jackson-dataformat-xml
 
 Copyright FasterXML
 
@@ -73,7 +73,7 @@ Apache License 2.0
 
 **jackson-dataformats-text**
 
-https://github.com/FasterXML/jackson-dataformats-text
+https://github.com/fasterxml/jackson-dataformats-text
 
 Copyright 2017 FasterXML
 
@@ -81,7 +81,7 @@ Apache License 2.0
 
 **jackson-modules-java8**
 
-https://github.com/FasterXML/jackson-modules-java8
+https://github.com/fasterxml/jackson-modules-java8
 
 Copyright 2013 FasterXML.com
 
@@ -167,6 +167,13 @@ Copyright 2004-2015 QOS.ch
 
 MIT License
 
+**Zip4j**
+
+https://github.com/srikanth-lingala/zip4j
+
+Copyright 2010 Srikanth Reddy Lingala
+
+Apache License 2.0
 
 # Apache License 2.0 #
 
