@@ -179,7 +179,7 @@ install_package_if_absent tar
 install_package_if_absent jq
 
 # install ort
-install_ort "22.5.0"
+install_ort "34.0.0"
 
 # install olive-cli
 install_latest_olive_cli
