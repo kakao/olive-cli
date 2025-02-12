@@ -4,7 +4,7 @@ $ErrorActionPreference = "Stop"
 
 $olivePackagesPath = "${env:USERPROFILE}\.olive\packages"
 $ortPath = "${olivePackagesPath}\ort"
-$ortVersion = "22.5.0"
+$ortVersion = "34.0.0"
 $ortReleaseUrl = "https://github.com/oss-review-toolkit/ort/releases/download/${ortVersion}/ort-${ortVersion}.zip"
 
 # Check if the package is already installed in global path.
