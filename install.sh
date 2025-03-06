@@ -47,7 +47,7 @@ mkdir_if_absent() {
     if [ ! -d "$directory" ]; then
         echo "Directory doesn't exist: $directory"
         echo "Creating directory: $directory"
-        sudo mkdir -p $directory
+        mkdir -p $directory
     fi
 }
 
