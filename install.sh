@@ -70,7 +70,7 @@ install_ort() {
     if [ -d "$ORT_PATH" ]; then
         echo "ort is already installed in $ORT_PATH."
         read -p "Do you want to replace the ort with v$ORT_VERSION? (y/n) " -r
-        if [[ ! $REPLY = ^[Yy]$ ]]
+    if [[ $REPLY =~ ^[Yy]$ ]]
         then
              sudo rm -rf "$ORT_PATH"
         else
