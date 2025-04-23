@@ -121,13 +121,22 @@ install_latest_olive_cli() {
 
     # Download latest release and parsing
     OLIVE_CLI_LATEST_RELEASE=$(curl -s "https://api.github.com/repos/kakao/olive-cli/releases/latest")
+    # 에러 메시지 감지
+    if echo "$OLIVE_CLI_LATEST_RELEASE" | jq -e 'has("message")' > /dev/null; then
+      ERR_MSG=$(echo "$OLIVE_CLI_LATEST_RELEASE" | jq -r '.message')
+      echo "GitHub API error: $ERR_MSG"
+      exit 1
+    fi
 
     if [[ "$OSTYPE" == "linux-gnu"* ]]; then
       # Linux
       OLIVE_CLI_ARCHIVE_URL=$(echo "$OLIVE_CLI_LATEST_RELEASE" | jq -r '.assets[] | select(.name | contains("Linux")) | .browser_download_url')
     elif [[ "$OSTYPE" == "darwin"* ]]; then
       # Mac OSX
-      ARCH=$(uname -m)
+      case "$(uname -m)" in
+        arm64) ARCH="ARM64" ;;
+        x86_64) ARCH="X64" ;;
+      esac
       OLIVE_CLI_ARCHIVE_URL=$(echo "$OLIVE_CLI_LATEST_RELEASE" | jq -r --arg arch "$ARCH" '.assets[] | select(.name | contains("macOS") and contains($arch)) | .browser_download_url')
     else
       echo "Your OS is not supported for this script."
