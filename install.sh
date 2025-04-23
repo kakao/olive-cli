@@ -127,7 +127,8 @@ install_latest_olive_cli() {
       OLIVE_CLI_ARCHIVE_URL=$(echo "$OLIVE_CLI_LATEST_RELEASE" | jq -r '.assets[] | select(.name | contains("Linux")) | .browser_download_url')
     elif [[ "$OSTYPE" == "darwin"* ]]; then
       # Mac OSX
-      OLIVE_CLI_ARCHIVE_URL=$(echo "$OLIVE_CLI_LATEST_RELEASE" | jq -r '.assets[] | select(.name | contains("macOS")) | .browser_download_url')
+      ARCH=$(uname -m)
+      OLIVE_CLI_ARCHIVE_URL=$(echo "$OLIVE_CLI_LATEST_RELEASE" | jq -r --arg arch "$ARCH" '.assets[] | select(.name | contains("macOS") and contains($arch)) | .browser_download_url')
     else
       echo "Your OS is not supported for this script."
       exit 1
