@@ -10,7 +10,7 @@ CLI를 사용하면 터미널 프로그램의 명령 프롬프트에서도 브�
 > - OLIVE CLI의 사용법, 명령어 등에 대한 자세한 설명은 [사용자 문서](https://olive.kakao.com/docs/cli/v2/overview) 를 참고해 주세요.
 > - OLIVE CLI를 통해 OLIVE의 기능을 사용하기 위해서는 먼저 OLIVE에서 API 토큰을 발급받아야 합니다. 발급 방법은 다음의 [API 토큰 발급하기](https://olive.kakao.com/docs/cli/v2/overview/#api-%ED%86%A0%ED%81%B0-%EB%B0%9C%EA%B8%89%ED%95%98%EA%B8%B0)를 참고해 주세요.
 > - OLIVE CLI 다운로드는 [OLIVE CLI 실행하기](https://olive.kakao.com/docs/cli/v2/overview/#olive-cli-%EC%8B%A4%ED%96%89%ED%95%98%EA%B8%B0)를 참고해주세요.
-> - 리눅스의 경우 v2.6.0 이상부터 Ubuntu 22.04에서 빌드되어 GLIBC_2.34 이상을 요구합니다.
+> - 리눅스의 경우 v2.6.0 버전부터 Ubuntu 22.04에서 빌드되어 GLIBC_2.34 이상을 요구합니다.
 
 OLIVE CLI는 보안상 웹서비스 사용이 어렵거나, 소스코드 노출이 우려되는 경우 안심하고 사용할 수 있습니다. 특장점은 다음과 같습니다.
 
