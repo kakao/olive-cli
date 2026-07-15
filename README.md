@@ -7,8 +7,8 @@ OLIVE CLI는 사용자 PC 환경에서 OLIVE Platform의 기능을 실행할 수
 CLI를 사용하면 터미널 프로그램의 명령 프롬프트에서도 브라우저 기반 OLIVE Platform과 동일하게 오픈소스를 스캔할 수 있습니다.
 
 > **★ 참고:**
-> - OLIVE CLI의 사용법, 명령어 등에 대한 자세한 설명은 [사용자 문서](https://olive.kakao.com/docs/cli/v2/overview) 를 참고해 주세요.
-> - OLIVE CLI를 통해 OLIVE의 기능을 사용하기 위해서는 먼저 OLIVE에서 API 토큰을 발급받아야 합니다. 발급 방법은 다음의 [API 토큰 발급하기](https://olive.kakao.com/docs/cli/v2/overview/#api-%ED%86%A0%ED%81%B0-%EB%B0%9C%EA%B8%89%ED%95%98%EA%B8%B0)를 참고해 주세요.
+> - OLIVE CLI의 사용법, 명령어 등에 대한 자세한 설명은 [사용자 문서](https://olive.kakao.com/docs/cli/v3/overview) 를 참고해 주세요.
+> - OLIVE CLI를 통해 OLIVE의 기능을 사용하기 위해서는 먼저 OLIVE에서 API 토큰을 발급받아야 합니다. 발급 방법은 다음의 [API 토큰 발급하기](https://olive.kakao.com/docs/cli/v3/overview/#api-%ED%86%A0%ED%81%B0-%EB%B0%9C%EA%B8%89%ED%95%98%EA%B8%B0)를 참고해 주세요.
 > - OLIVE CLI 다운로드는 [OLIVE CLI 실행하기](https://olive.kakao.com/docs/cli/v2/overview/#olive-cli-%EC%8B%A4%ED%96%89%ED%95%98%EA%B8%B0)를 참고해주세요.
 > - 리눅스의 경우 v2.6.0 버전부터 Ubuntu 22.04에서 빌드되어 GLIBC_2.34 이상을 요구합니다.
 
@@ -32,6 +32,6 @@ OLIVE CLI는 최신 버전을 기준으로 해당 버전을 포함한 3개의 �
 
 ## Quick Links
 - [OLIVE Platform](https://olive.kakao.com)
-- [OLIVE CLI 사용자 문서](https://olive.kakao.com/docs/cli/v2/overview)
+- [OLIVE CLI 사용자 문서](https://olive.kakao.com/docs/cli/v3/overview)
 - [Relaese Note](https://github.com/kakao/olive-cli/releases)
 - 문의하기 : <a href="http://pf.kakao.com/_ztlfK/chat"><img src="https://t1.kakaocdn.net/together_image/svg/footer_kakaotalk.svg" height="16px" width="16px"></a>&nbsp;&nbsp;&nbsp;[✉](mailto:opensource@kakaocorp.com)
