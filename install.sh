@@ -145,15 +145,31 @@ install_latest_olive_cli() {
 
     # Download the program using curl
     echo "Downloading from: $OLIVE_CLI_ARCHIVE_URL"
-    sudo curl -L "$OLIVE_CLI_ARCHIVE_URL" -o "olive-cli.tar.gz"
+    curl -L "$OLIVE_CLI_ARCHIVE_URL" -o "olive-cli.tar.gz"
 
     # Extract the downloaded file
     echo "Extract file: $(pwd)/olive-cli.tar.gz"
-    sudo tar -zxvf olive-cli.tar.gz
+    tar -zxvf olive-cli.tar.gz
+
+    if [ ! -f "olive-analyzer.jar" ]; then
+      echo "Cannot find olive-analyzer.jar in the downloaded archive."
+      exit 1
+    fi
+
+    OLIVE_ANALYZER_PATH="$HOME/.olive/packages/olive-analyzer"
+    OLIVE_ANALYZER_JAR_PATH="$OLIVE_ANALYZER_PATH/olive-analyzer.jar"
+    if [ -f "$OLIVE_ANALYZER_JAR_PATH" ]; then
+        read -p "The olive-analyzer.jar exists. Would you like to replace? (y/n) " -r
+        if [[ ! $REPLY =~ ^[Yy]$ ]]
+        then
+          echo "Installation canceled..."
+          exit 0
+        fi
+    fi
 
     # Set the downloaded program as executable
     echo "Set olive-cli as executable"
-    sudo chmod +x olive-cli
+    chmod +x olive-cli
 
     # Move the program to /usr/local/bin so it's in the PATH for all users
     echo "Move the program to /usr/local/bin so it's in the PATH for all users."
@@ -169,8 +185,13 @@ install_latest_olive_cli() {
     fi
     sudo mv NOTICE.md $OLIVE_CLI_DOCUMENTS_DIR/
 
+    mkdir_if_absent "$OLIVE_ANALYZER_PATH"
+    echo "Move olive-analyzer.jar to $OLIVE_ANALYZER_JAR_PATH"
+    mv olive-analyzer.jar "$OLIVE_ANALYZER_JAR_PATH"
+    echo "olive-analyzer.jar is installed in $OLIVE_ANALYZER_JAR_PATH."
+
     # Remove the downloaded file
-    sudo rm olive-cli.tar.gz
+    rm olive-cli.tar.gz
 
     if command -v "olive-cli" >/dev/null 2>&1; then
         echo "Installation completed successfully."
