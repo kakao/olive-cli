@@ -1,4 +1,3 @@
-
 # OSS Notice | OLIVE-CLI #
 
 This application is Copyright © Kakao Corp. All rights reserved.
@@ -7,7 +6,7 @@ The following sets forth attribution notices for third party software that may b
 
 If you have any questions about these notices, please email us at [opensource@kakaocorp.com][opensource_kakaocorp.com]
 
-**Apache Commons Exec**
+ **Apache Commons Exec**
 
 https://github.com/apache/commons-exec
 
@@ -15,7 +14,7 @@ Copyright 2005-2019 The Apache Software Foundation
 
 Apache License 2.0
 
-**Apache Commons Lang**
+ **Apache Commons Lang**
 
 https://github.com/apache/commons-lang
 
@@ -23,15 +22,31 @@ Copyright 2001-2016 The Apache Software Foundation
 
 Apache License 2.0
 
-**Apache Log4j 2**
+ **cobra**
 
-https://github.com/apache/logging-log4j2
+https://github.com/spf13/cobra
 
-Copyright 1999-2005 The Apache Software Foundation
+Copyright 2013 Steve Francia <spf@spf13.com>
 
 Apache License 2.0
 
-**jackon-module-kotlin**
+ **Go Tools**
+
+https://github.com/golang/tools
+
+Copyright 2009 The Go Authors
+
+BSD 3-Clause "New" or "Revised" License
+
+ **go-pretty**
+
+https://github.com/jedib0t/go-pretty
+
+Copyright 2018 jedib0t
+
+MIT License
+
+ **jackon-module-kotlin**
 
 https://github.com/fasterxml/jackson-module-kotlin
 
@@ -39,7 +54,7 @@ Copyright 2020 FasterXML.
 
 Apache License 2.0
 
-**Jackson Annotations**
+ **Jackson Annotations**
 
 https://github.com/fasterxml/jackson-annotations
 
@@ -47,7 +62,7 @@ Copyright 2009 FasterXML, LLC
 
 Apache License 2.0
 
-**Jackson Core**
+ **Jackson Core**
 
 https://github.com/fasterxml/jackson-core
 
@@ -55,15 +70,15 @@ Copyright 2009 FasterXML, LLC
 
 Apache License 2.0
 
-**Jackson Databind**
+ **Jackson Databind**
 
 https://github.com/fasterxml/jackson-databind
 
-Copyright 2009 FasterXML, LLC
+Copyright 2013 FasterXML, LLC
 
 Apache License 2.0
 
-**jackson-dataformat-xml**
+ **jackson-dataformat-xml**
 
 https://github.com/fasterxml/jackson-dataformat-xml
 
@@ -71,7 +86,7 @@ Copyright FasterXML
 
 Apache License 2.0
 
-**jackson-dataformats-text**
+ **jackson-dataformats-text**
 
 https://github.com/fasterxml/jackson-dataformats-text
 
@@ -79,7 +94,7 @@ Copyright 2017 FasterXML
 
 Apache License 2.0
 
-**jackson-modules-java8**
+ **jackson-modules-java8**
 
 https://github.com/fasterxml/jackson-modules-java8
 
@@ -87,39 +102,23 @@ Copyright 2013 FasterXML.com
 
 Apache License 2.0
 
-**KFormat**
-
-https://github.com/marcelmay/kformat
-
-Copyright 2019-2021 Marcel May
-
-Apache License 2.0
-
-**Kotlin**
+ **Kotlin**
 
 https://github.com/jetbrains/kotlin
 
-Copyright 2010-2017 JetBrains s.r.o.
+Copyright 2010-2024 JetBrains s.r.o. and Kotlin Programming Language contributors.
 
 Apache License 2.0
 
-**kotlin-logging**
+ **Lip Gloss**
 
-https://github.com/MicroUtils/kotlin-logging
+https://github.com/charmbracelet/lipgloss
 
-Copyright 2016-2018 Ohad Shai
+Copyright (c) 2021-2026 Charmbracelet, Inc.
 
-Apache License 2.0
+MIT License
 
-**Ktor**
-
-https://github.com/ktorio/ktor
-
-Copyright 2014-2022 JetBrains s.r.o and contributors
-
-Apache License 2.0
-
-**logback**
+ **logback**
 
 https://github.com/qos-ch/logback
 
@@ -127,31 +126,15 @@ Copyright 2016 QOS.ch
 
 Eclipse Public License 1.0
 
-**lombok**
+ **mod**
 
-https://github.com/rzwitserloot/lombok
+https://github.com/golang/mod
 
-Copyright 2009-2015 The Project Lombok Authors.
+Copyright 2009 The Go Authors
 
-MIT License
+BSD 3-Clause "New" or "Revised" License
 
-**picocli**
-
-https://github.com/remkop/picocli
-
-Copyright rpopma@apache.org
-
-Apache License 2.0
-
-**picocli-jansi-graalvm**
-
-https://github.com/remkop/picocli-jansi-graalvm
-
-Copyright property of respective owners
-
-Apache License 2.0
-
-**Semver4j**
+ **Semver4j**
 
 https://github.com/vdurmont/semver4j
 
@@ -159,15 +142,23 @@ Copyright 2015-present Vincent DURMONT vdurmont@gmail.com
 
 MIT License
 
-**SLF4J**
+ **SLF4J**
 
 https://github.com/qos-ch/slf4j
 
-Copyright 2004-2015 QOS.ch
+Copyright (c) 2004-2022 QOS.ch Sarl (Switzerland)
 
 MIT License
 
-**Zip4j**
+ **YAML support for the Go language**
+
+https://github.com/go-yaml/yaml
+
+Copyright 2011-2016 Canonical Ltd
+
+Apache License 2.0
+
+ **Zip4j**
 
 https://github.com/srikanth-lingala/zip4j
 
@@ -251,6 +242,22 @@ distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
+``````````
+
+# BSD 3-Clause "New" or "Revised" License #
+
+``````````
+Copyright (c) <year> <owner> . All rights reserved.
+
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+
+   1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+
+   2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+
+   3. Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ``````````
 
 # Eclipse Public License 1.0 #
