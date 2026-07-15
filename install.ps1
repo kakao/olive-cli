@@ -83,6 +83,21 @@ Invoke-WebRequest -Uri $assetUrl -OutFile "${currentDir}\olive-cli.zip"
 Write-Output "Extract file: ${currentDir}\olive-cli.zip"
 Expand-Archive -Path "${currentDir}\olive-cli.zip" -DestinationPath $currentDir -Force
 
+$extractedAnalyzerJarPath = "${currentDir}\olive-analyzer.jar"
+if (!(Test-Path -Path $extractedAnalyzerJarPath)) {
+    throw "Cannot find olive-analyzer.jar in the downloaded archive."
+}
+
+$oliveAnalyzerPath = "${olivePackagesPath}\olive-analyzer"
+$oliveAnalyzerJarPath = "${oliveAnalyzerPath}\olive-analyzer.jar"
+if (Test-Path -Path $oliveAnalyzerJarPath) {
+    $userInput = Read-Host -Prompt "The olive-analyzer.jar exists. Would you like to replace? (y/n)"
+    if (!($userInput -eq 'y' -or $userInput -eq 'Y')) {
+        Write-Output "Installation canceled..."
+        exit
+    }
+}
+
 # Make olive-cli directory if not exists.
 $destinationPath = "${env:PROGRAMFILES}\olive-cli"
 if (!(Test-Path -Path $destinationPath )) {
@@ -97,11 +112,20 @@ Write-Output "Move olive-cli.exe to C:\Program Files\olive-cli."
 Move-Item -Path $currentDir\olive-cli.exe -Destination $destinationPath -Force
 Move-Item -Path $currentDir\NOTICE.md -Destination $destinationPath -Force
 
+if (!(Test-Path -Path $oliveAnalyzerPath)) {
+    Write-Output "Create olive-analyzer folder in ${olivePackagesPath}"
+    New-Item -ItemType Directory -Force -Path $oliveAnalyzerPath
+    Write-Output ""
+}
+Write-Output "Move olive-analyzer.jar to ${oliveAnalyzerJarPath}"
+Move-Item -Path $extractedAnalyzerJarPath -Destination $oliveAnalyzerJarPath -Force
+Write-Output "olive-analyzer.jar is installed in ${oliveAnalyzerJarPath}."
+
 # Get the current PATH variable
 $path = [Environment]::GetEnvironmentVariable("Path", "Machine")
 
 # Add olive.exe if path does not contain olive.exe
-if ($currentPath -notlike "*$destinationPath*") {
+if ($path -notlike "*$destinationPath*") {
     # append the program path to the current PATH
     $newPath = $path + ";" + "$destinationPath";
 
